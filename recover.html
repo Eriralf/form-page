@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recover | ralpForm</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="containerRec">
+    <div class="top-form">
+      <h2>Forgot Password</h2>
+    </div>
+    <div class="label-container">
+      <form action="#">
+        <span>
+          <img src="assets/icons/envelope-light.svg" alt="email">
+          <input id=show-txt-rec type="text" name="email" placeholder="Type your email" autocomplete="off">
+        </span>
+      </form>
+      <p id="errorMsg"></p>
+      <input id="btn-submit-rec" type="submit" value="Recover" onclick="checkEmailField()">
+      <div>
+        <a href="/">Back</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
