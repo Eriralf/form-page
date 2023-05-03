@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ralpForm</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-container">
+      <h1>Keep Connect</h1>
+      <p>Login with your credential to access your account</p>
+      <a id="btn-register" href="register.html">Sign up</a>
+    </div>
+    <div class="right-container">
+      <div class="top-form">
+        <h2>Login Account</h2>
+      </div>
+      <form action="#">
+        <div class="label-container">
+          <label for="email">Email</label>
+          <span>
+            <img src="assets/icons/user-light.svg" alt="">
+            <input id=show-txt type="text" name="email" placeholder="Type your email" autocomplete="off">
+          </span>
+        </div>
+        <div class="label-container">
+          <label for="senha">Password</label>
+          <span>
+            <img src="assets/icons/key-light.svg" alt="">
+            <input id="show-input" type="password" name="senha" placeholder="Type your password">
+            <button id="btn-passwd" class="show-passwd" type="button" title="mostrar senha">
+              <img id="change-img" src="assets/icons/eye-light.svg" alt="">
+            </button>
+          </span>
+        </div>
+        <p id="errorMsg"></p>
+        <div>
+          <a href="recover.html">Forgot password?</a>
+        </div>
+      </form>
+      <input id="btn-submit" type="submit" value="Sign in" onclick="executar()" disabled>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+<footer>
+  <p>Made with &#128151; by <a href="https://www.linkedin.com/in/eriralfbarros/" target="_blank">Eriralf.</a></p>
+</footer>
+
+</html>
